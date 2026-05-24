@@ -357,7 +357,7 @@ const listaPlayers = document.querySelector(".lista-players");
 let elenco = [];
 
 // ✔️ CARREGA ELENCO JSON
-fetch("./dado/elenco.json") // <-- ajuste mais seguro
+fetch(`${window.location.origin}/dado/elenco.json`)// <-- ajuste mais seguro
 .then(res => {
     if(!res.ok) throw new Error("Erro ao carregar elenco.json");
     return res.json();
