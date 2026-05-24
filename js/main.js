@@ -357,7 +357,8 @@ const listaPlayers = document.querySelector(".lista-players");
 let elenco = [];
 
 // ✔️ CARREGA ELENCO JSON
-fetch(`${window.location.origin}/dado/elenco.json`)// <-- ajuste mais seguro
+const base = "/Palmeiras/";
+fetch(`${base}dado/elenco.json`)
 .then(res => {
     if(!res.ok) throw new Error("Erro ao carregar elenco.json");
     return res.json();
