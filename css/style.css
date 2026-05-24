@@ -1,0 +1,869 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:90px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 50px;
+
+    background:#0f3d1e;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+}
+
+header section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:60px;
+}
+
+header h1{
+    font-size:30px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#e4cc4a;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:100vh;
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:url("../img/palmeiras-banner.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+/* camada escura por cima */
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.85)
+    );
+}
+
+/* conteúdo central */
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+    max-width:900px;
+
+    animation:fadeUp 1s ease;
+}
+
+.hero h2{
+    font-size:64px;
+    letter-spacing:3px;
+    color:#fff;
+    text-shadow:0 0 20px rgba(15,61,30,0.6);
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:20px;
+    color:#ddd;
+}
+
+/* botões */
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.hero-buttons button{
+    width:180px;
+    height:55px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#0f3d1e;
+    color:white;
+
+    font-size:18px;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.hero-buttons button:hover{
+    background:#e4cc4a;
+    color:black;
+    transform:scale(1.05);
+}
+
+/* animação */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* ========================= */
+/* HISTORY TÍTULO           */
+/* ========================= */
+
+.topo-history{
+    width:90%;
+    margin:80px auto 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.topo-history h2{
+    font-size:48px;
+    color:#e4cc4a;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    position:relative;
+    padding-bottom:15px;
+}
+
+.topo-history h2::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    width:120px;
+    height:4px;
+    background:#0f3d1e;
+    border-radius:10px;
+}
+
+/* ========================= */
+/* HISTORY CONTAINER        */
+/* ========================= */
+
+.history-content{
+    width:90%;
+    margin:0 auto;
+    background:#111;
+    padding:40px;
+    border-radius:15px;
+    border:1px solid rgba(15,61,30,0.5);
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+/* texto */
+.history-content p{
+    font-size:20px;
+    line-height:38px;
+    margin-bottom:25px;
+    color:#ddd;
+    text-align:justify;
+    transition:0.3s;
+}
+
+.history-content p:hover{
+    color:#fff;
+    transform:translateX(5px);
+}
+
+/* TÍTULOS */
+
+.titles section{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.titles article{
+    background:#111;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    transition:0.3s;
+}
+
+.titles article:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px #0f3d1e;
+}
+
+.titles h3{
+    font-size:60px;
+    color:#e4cc4a;
+    margin-bottom:15px;
+}
+
+.titles p{
+    font-size:22px;
+}
+
+/* JOGADORES */
+
+.players section{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.players article{
+    background:#111;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:0.3s;
+}
+
+.players article:hover{
+    transform:scale(1.03);
+
+    box-shadow:0 0 20px #0f3d1e;
+}
+
+.players img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.players h3{
+    font-size:30px;
+    margin:20px;
+}
+
+.players p{
+    margin:0 20px 20px;
+    color:#ccc;
+}
+
+/* ARENA */
+
+.stadium article{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.stadium img{
+    width:600px;
+    border-radius:10px;
+}
+
+.stadium p{
+    font-size:24px;
+    line-height:40px;
+}
+
+/* GALERIA */
+
+.gallery section{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTATO */
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+
+    padding:20px;
+
+    background:#111;
+
+    color:white;
+
+    border:2px solid #0f3d1e;
+
+    border-radius:10px;
+
+    font-size:18px;
+}
+
+.contact textarea{
+    height:200px;
+    resize:none;
+}
+
+.contact button{
+    width:200px;
+    height:55px;
+
+    background:#0f3d1e;
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+.contact button:hover{
+    background:#e4cc4a;
+    color:black;
+}
+
+/* ASIDE */
+
+aside{
+    width:90%;
+
+    margin:100px auto;
+
+    background:#111;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+}
+
+aside h2{
+    color:#e4cc4a;
+    margin-bottom:20px;
+}
+
+aside p{
+    font-size:22px;
+    margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+    width:100%;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#0f3d1e;
+
+    margin-top:100px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1200px){
+
+    .titles section{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .players section{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery section{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h2{
+        font-size:45px;
+    }
+
+    .history article,
+    .stadium article{
+        flex-direction:column;
+    }
+
+    .history img,
+    .stadium img{
+        width:100%;
+    }
+
+    .players section,
+    .titles section,
+    .gallery section{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* JOGOS */
+
+.jogos{
+    width:90%;
+    margin:100px auto;
+}
+
+.jogos h2{
+    font-size:45px;
+    color:#e4cc4a;
+    margin-bottom:40px;
+}
+
+.jogo-card{
+    background:
+    linear-gradient(
+        145deg,
+        #111,
+        #1a1a1a
+    );
+
+    border:2px solid #0f3d1e;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    transition:0.4s;
+
+    box-shadow:
+    0 0 15px rgba(15,61,30,0.3);
+}
+
+.jogo-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 25px rgba(15,61,30,0.8);
+}
+
+.times{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.time{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+
+    width:200px;
+}
+
+.time img{
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+    filter:
+    drop-shadow(
+        0 0 10px rgba(255,255,255,0.2)
+    );
+}
+
+.time h3{
+    font-size:24px;
+    text-align:center;
+}
+
+.placar{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.placar span{
+    font-size:60px;
+    font-weight:bold;
+    color:#e4cc4a;
+}
+
+.placar p{
+    font-size:35px;
+    color:white;
+}
+
+.info-jogo{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    color:#bbb;
+
+    font-size:18px;
+}
+
+.topo-jogos{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-bottom:40px;
+}
+
+#filtroJogos{
+    background:#111;
+    color:white;
+
+    border:2px solid #0f3d1e;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+
+
+
+/* ========================= */
+/* ELENCO HEADER (TÍTULO)   */
+/* ========================= */
+
+.topo-elenco{
+    width:90%;
+    margin:80px auto 20px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+
+.topo-elenco h2{
+    font-size:48px;
+    color:#e4cc4a;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    position:relative;
+    padding-bottom:15px;
+}
+
+.topo-elenco h2::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    width:120px;
+    height:4px;
+    background:#0f3d1e;
+    border-radius:10px;
+}
+
+/* ========================= */
+/* ELENCO GRID MELHORADO    */
+/* ========================= */
+
+.lista-players{
+    width:90%;
+    margin:0 auto 100px;
+
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:25px;
+}
+
+/* ========================= */
+/* PLAYER CARD NOVO DESIGN  */
+/* ========================= */
+
+.player-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    object-position: top;
+    border-bottom:2px solid #0f3d1e;
+}
+
+.player-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: radial-gradient(circle at top, rgba(15,61,30,0.4), transparent 60%);
+    opacity:0;
+    transition:0.3s;
+}
+
+.player-card:hover::before{
+    opacity:1;
+}
+
+.player-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(15,61,30,0.6);
+}
+
+.player-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-bottom:2px solid #0f3d1e;
+    transition:0.3s;
+}
+
+.player-card:hover img{
+    transform:scale(1.05);
+}
+
+.player-card .numero{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:#0f3d1e;
+    color:white;
+    padding:6px 10px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.player-card h3{
+    font-size:20px;
+    margin:15px 10px 5px;
+    color:white;
+}
+
+.player-card p{
+    font-size:14px;
+    color:#ccc;
+    margin-bottom:15px;
+}
+
+
+/* ========================= */
+/* TITLES HEADER MELHORADO  */
+/* ========================= */
+
+.topo-titles{
+    width:90%;
+    margin:80px auto 30px;
+    display:flex;
+    justify-content:center;
+}
+
+.topo-titles h2{
+    font-size:52px;
+    color:#e4cc4a;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    position:relative;
+    padding-bottom:15px;
+}
+
+.topo-titles h2::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    width:140px;
+    height:4px;
+    background:linear-gradient(90deg, transparent, #0f3d1e, transparent);
+    border-radius:10px;
+}
+
+/* ========================= */
+/* GRID DE TÍTULOS          */
+/* ========================= */
+
+.titles-grid{
+    width:90%;
+    margin:0 auto 100px;
+
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:30px;
+}
+
+/* ========================= */
+/* CARDS MAIS BONITOS       */
+/* ========================= */
+
+.titles-grid article{
+    background:linear-gradient(145deg, #111, #0d0d0d);
+    border:1px solid rgba(15,61,30,0.4);
+
+    padding:45px 20px;
+    border-radius:18px;
+
+    text-align:center;
+
+    position:relative;
+    overflow:hidden;
+
+    transition:0.4s;
+}
+
+/* brilho animado no fundo */
+.titles-grid article::before{
+    content:"";
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:radial-gradient(circle, rgba(15,61,30,0.4), transparent 70%);
+    top:-80px;
+    left:-80px;
+    opacity:0;
+    transition:0.4s;
+}
+
+.titles-grid article:hover::before{
+    opacity:1;
+}
+
+/* hover */
+.titles-grid article:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 25px rgba(15,61,30,0.6);
+    border-color:#0f3d1e;
+}
+
+/* número */
+.titles-grid h3{
+    font-size:64px;
+    color:#e4cc4a;
+    margin-bottom:10px;
+
+    text-shadow:0 0 15px rgba(228,204,74,0.3);
+}
+
+/* texto */
+.titles-grid p{
+    font-size:20px;
+    color:#ddd;
+    letter-spacing:1px;
+}
+
+/* ========================= */
+/* RESPONSIVO               */
+/* ========================= */
+
+@media(max-width:1200px){
+    .titles-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px){
+    .titles-grid{
+        grid-template-columns:1fr;
+    }
+
+    .topo-titles h2{
+        font-size:38px;
+    }
+}
+
+
+@media(max-width:1200px){
+    .lista-players{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media(max-width:800px){
+    .lista-players{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media(max-width:500px){
+    .lista-players{
+        grid-template-columns:1fr;
+    }
+}

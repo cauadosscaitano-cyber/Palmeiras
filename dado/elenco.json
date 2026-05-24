@@ -1,0 +1,157 @@
+[
+  {
+    "nome": "Aranha",
+    "numero": 24,
+    "posicao": "Goleiro",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/07/Aranha-2.png"
+  },
+  {
+    "nome": "Carlos Miguel",
+    "numero": 1,
+    "posicao": "Goleiro",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/08/Carlos-Miguel-2.png"
+  },
+  {
+    "nome": "Marcelo Lomba",
+    "numero": 14,
+    "posicao": "Goleiro",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2021/12/Lomba-2.png"
+  },
+
+  {
+    "nome": "Benedetti",
+    "numero": 43,
+    "posicao": "Zagueiro",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/03/Benedetti-3.png"
+  },
+  {
+    "nome": "Bruno Fuchs",
+    "numero": 3,
+    "posicao": "Zagueiro",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/02/Bruno-Fuchs-2.png"
+  },
+  {
+    "nome": "Gustavo Gómez",
+    "numero": 15,
+    "posicao": "Zagueiro",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2019/05/Gustavo-Gomez-2.png"
+  },
+  {
+    "nome": "Murilo",
+    "numero": 26,
+    "posicao": "Zagueiro",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2022/01/Murilo-2.png"
+  },
+
+  {
+    "nome": "Agustín Giay",
+    "numero": 4,
+    "posicao": "Lateral-direito",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2024/06/Giay-1.png"
+  },
+  {
+    "nome": "Khellven",
+    "numero": 12,
+    "posicao": "Lateral-direito",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/08/Khellven-2.png"
+  },
+
+  {
+    "nome": "Arthur",
+    "numero": 56,
+    "posicao": "Lateral-esquerdo",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2026/02/Arthur.png"
+  },
+  {
+    "nome": "Jefté",
+    "numero": 6,
+    "posicao": "Lateral-esquerdo",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/08/Jefte-2.png"
+  },
+  {
+    "nome": "Joaquín Piquerez",
+    "numero": 22,
+    "posicao": "Lateral-esquerdo",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2021/08/Piquerez-2.png"
+  },
+
+  {
+    "nome": "Andreas Pereira",
+    "numero": 8,
+    "posicao": "Meio-campista",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/09/Andreas-2.png"
+  },
+  {
+    "nome": "Emiliano Martínez",
+    "numero": 32,
+    "posicao": "Meio-campista",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/01/Emiliano-Martinez.png"
+  },
+  {
+    "nome": "Felipe Anderson",
+    "numero": 7,
+    "posicao": "Meio-campista",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2024/07/F.Anderson.png"
+  },
+  {
+    "nome": "Figueiredo",
+    "numero": 38,
+    "posicao": "Meio-campista",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/03/Figueiredo-2.png"
+  },
+  {
+    "nome": "Larson",
+    "numero": 48,
+    "posicao": "Meio-campista",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2026/01/Larsson.png"
+  },
+  {
+    "nome": "Lucas Evangelista",
+    "numero": 30,
+    "posicao": "Meio-campista",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/03/Evangelista.png"
+  },
+  {
+    "nome": "Maurício",
+    "numero": 18,
+    "posicao": "Meio-campista",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2024/06/Mauricio-2.png"
+  },
+
+  {
+    "nome": "Allan",
+    "numero": 40,
+    "posicao": "Atacante",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2019/08/Allan-2.png"
+  },
+  {
+    "nome": "López",
+    "numero": 42,
+    "posicao": "Atacante",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2022/06/Flaco.png"
+  },
+  {
+    "nome": "Luighi",
+    "numero": 31,
+    "posicao": "Atacante",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/03/Luighi-2.png"
+  },
+  {
+    "nome": "Paulinho",
+    "numero": 10,
+    "posicao": "Atacante",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/01/Paulinho-2.png"
+  },
+  {
+    "nome": "Ramón Sosa",
+    "numero": 19,
+    "posicao": "Atacante",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/07/Sosa-1.png"
+  },
+  {
+    "nome": "Vitor Roque",
+    "numero": 9,
+    "posicao": "Atacante",
+    "foto": "https://www.palmeiras.com.br/wp-content/uploads/2025/03/Vitor-Roque-2.png"
+  }
+]

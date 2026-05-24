@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./img/PalmeirasSP.webp">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Palmeiras</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <section>
+
+            <img 
+                src="./img/PalmeirasSP.webp" 
+                alt="Logo do Palmeiras"
+                class="logo"
+            >
+
+            <h1>PALMEIRAS</h1>
+
+        </section>
+
+    </header>
+
+    <!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <article class="hero-content">
+
+        <h2>MAIOR CAMPEÃO DO BRASIL</h2>
+
+        <p>Tradição, raça e glória eterna.</p>
+
+        <div class="hero-buttons">
+
+            <button onclick="document.querySelector('#history').scrollIntoView({behavior:'smooth'})">
+                História
+            </button>
+
+            <button onclick="document.querySelector('#players').scrollIntoView({behavior:'smooth'})">
+                Elenco
+            </button>
+
+        </div>
+
+    </article>
+
+</section>
+
+    <section class="history" id="history">
+
+    <section class="topo-history">
+        <h2>História do Palmeiras</h2>
+    </section>
+
+    <article class="history-content">
+
+        <p>
+            O Palmeiras nasceu em 1914, na cidade de São Paulo, com o nome de Palestra Italia. O clube foi fundado por imigrantes italianos que buscavam criar uma equipe que representasse sua comunidade, além de fortalecer seus laços culturais em um período de grande crescimento da cidade.
+        </p>
+
+        <p>
+            Desde os primeiros anos, o clube já mostrava força no futebol paulista, conquistando respeito e rivalidade com grandes equipes da época. A paixão dos torcedores crescia junto com o time, que rapidamente se tornava uma das potências do estado.
+        </p>
+
+        <p>
+            Durante a Segunda Guerra Mundial, o Brasil rompeu relações com países do Eixo, o que obrigou o clube a mudar de nome. Em 1942, após um momento histórico marcante, o Palestra Italia passou a se chamar oficialmente Palmeiras. Mesmo com a mudança, o clube manteve sua identidade e tradição, iniciando uma nova fase de sua história.
+        </p>
+
+        <p>
+            Nas décadas seguintes, o Palmeiras se consolidou como uma das maiores forças do futebol brasileiro, conquistando títulos importantes e formando equipes históricas. O clube ficou conhecido por sua competitividade, força coletiva e por sempre disputar campeonatos em alto nível.
+        </p>
+
+        <p>
+            Na era moderna, o Palmeiras passou por reformulações importantes, se estruturando financeiramente e esportivamente. Esse processo trouxe de volta o clube ao topo do futebol sul-americano, com conquistas como a Copa Libertadores e títulos nacionais expressivos.
+        </p>
+
+        <p>
+            Hoje, o Palmeiras é um dos clubes mais vitoriosos do Brasil, com uma torcida apaixonada e um dos estádios mais modernos do país, o Allianz Parque. Sua história é marcada por superação, tradição e uma busca constante por títulos e protagonismo no futebol mundial.
+        </p>
+
+    </article>
+
+</section>
+<section class="titles" id="titles">
+
+    <section class="topo-titles">
+        <h2>Títulos</h2>
+    </section>
+
+    <section class="titles-grid">
+
+        <article>
+            <h3>12</h3>
+            <p>Brasileirões</p>
+        </article>
+
+        <article>
+            <h3>3</h3>
+            <p>Libertadores</p>
+        </article>
+
+        <article>
+            <h3>4</h3>
+            <p>Copa do Brasil</p>
+        </article>
+
+        <article>
+            <h3>1</h3>
+            <p>Copa Rio</p>
+        </article>
+
+    </section>
+
+</section>
+
+    <section class="topo-elenco" id="players">
+        <h2>Elenco Atual</h2>
+    </section>
+
+    <section class="lista-players"></section>
+
+
+    
+
+    <section class="jogos">
+
+    <section class="topo-jogos">
+
+        <h2>
+            Jogos do Palmeiras
+        </h2>
+
+        <select id="filtroJogos" aria-label="Filtrar jogos">
+
+            <option value="todos">
+                Todos
+            </option>
+
+            <option value="vitorias">
+                Vitórias
+            </option>
+
+            <option value="empates">
+                Empates
+            </option>
+
+            <option value="derrotas">
+                Derrotas
+            </option>
+
+        </select>
+
+    </section>
+
+    <section class="lista-jogos"></section>
+
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Palmeiras Fan Site
+        </p>
+
+    </footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
