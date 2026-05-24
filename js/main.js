@@ -357,21 +357,18 @@ const listaPlayers = document.querySelector(".lista-players");
 let elenco = [];
 
 // ✔️ CARREGA ELENCO JSON
-const base = "/Palmeiras/";
-fetch(`${base}dado/elenco.json`)
+fetch("./dado/elenco.json")
 .then(res => {
-    if(!res.ok) throw new Error("Erro ao carregar elenco.json");
+    console.log("STATUS ELENCO:", res.status);
     return res.json();
 })
 .then(data => {
+    console.log("ELENCO:", data);
     elenco = data;
     montarElenco();
 })
 .catch(err => {
-    console.error("Erro elenco:", err);
-    if(listaPlayers){
-        listaPlayers.innerHTML = "<p>Erro ao carregar elenco</p>";
-    }
+    console.error("ERRO ELENCO:", err);
 });
 
 // ✔️ BUSCA FOTO (Wikipedia)
